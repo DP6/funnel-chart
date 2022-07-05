@@ -1,0 +1,24 @@
+{
+  "name": "DP6 Funnel Chart",
+  "organization": "DP6",
+  "description": "Funnel Chart from DP6",
+  "logoUrl": "https://www.dp6.com.br/wp-content/uploads/2021/11/cropped-cropped-Logo_154x70.png",
+  "organizationUrl": "https://dp6.com.br",
+  "supportUrl": "https://github.com/DP6/funnel-chart/issues",
+  "privacyPolicyUrl": "https://www.dp6.com.br/politica-de-privacidade/",
+  "termsOfServiceUrl": "https://url",
+  "packageUrl": "https://github.com/DP6/funnel-chart",
+  "devMode": true,
+  "components": [
+    {
+      "name": "Funnel_D3",
+      "description": "Funnel Chart from DP6",
+      "iconUrl": "https://url",
+      "resource": {
+        "js": "gs://ci-graphs/funnel-dev/index.js",
+        "config": "gs://ci-graphs/funnel-dev/index.json",
+        "css": "gs://ci-graphs/funnel-dev/index.css"
+      }
+    }
+  ]
+}

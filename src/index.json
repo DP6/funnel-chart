@@ -1,0 +1,405 @@
+{
+  "data": [
+    {
+      "id": "concepts",
+      "label": "Concepts",
+      "elements": [
+        {
+          "id": "dimID",
+          "label": "Dimension (Dummy)",
+          "type": "DIMENSION",
+          "options": {
+            "min": 1,
+            "max": 1
+          }
+        },
+        {
+          "id": "metricID",
+          "label": "Metrics",
+          "type": "METRIC",
+          "options": {
+            "min": 2
+          }
+        }
+      ]
+    }
+  ],
+  "style": [
+    {
+      "id": "funnelStyle",
+      "label": "Funnel Options",
+      "elements": [
+        {
+          "id": "shapeType",
+          "label": "Shape",
+          "type": "SELECT_SINGLE",
+          "defaultValue": "bars",
+          "options": [
+            {
+              "label": "Bars",
+              "value": "bars"
+            }
+          ]
+        },
+        {
+          "id": "barHeight",
+          "label": "Bar Height / Column Width (px)",
+          "defaultValue": 60,
+          "type": "INTERVAL"
+        },
+        {
+          "id": "spacing",
+          "label": "Spacing (between bars)",
+          "defaultValue": "0.15",
+          "type": "SELECT_SINGLE",
+          "options": [
+            {
+              "label": "0%",
+              "value": "0"
+            },
+            {
+              "label": "5%",
+              "value": "0.05"
+            },
+            {
+              "label": "10%",
+              "value": "0.1"
+            },
+            {
+              "label": "15%",
+              "value": "0.15"
+            },
+            {
+              "label": "20%",
+              "value": "0.2"
+            },
+            {
+              "label": "25%",
+              "value": "0.25"
+            },
+            {
+              "label": "30%",
+              "value": "0.3"
+            },
+            {
+              "label": "35%",
+              "value": "0.35"
+            },
+            {
+              "label": "40%",
+              "value": "0.4"
+            },
+            {
+              "label": "45%",
+              "value": "0.45"
+            },
+            {
+              "label": "50%",
+              "value": "0.5"
+            }
+          ]
+        },
+        {
+          "id": "barAlign",
+          "label": "Align",
+          "type": "SELECT_SINGLE",
+          "defaultValue": "center",
+          "options": [
+            {
+              "label": "Center",
+              "value": "center"
+            },
+            {
+              "label": "Left",
+              "value": "left"
+            },
+            {
+              "label": "Right",
+              "value": "right"
+            }
+          ]
+        },
+        {
+          "id": "colorStart",
+          "label": "Color Start",
+          "type": "GRID_COLOR",
+          "defaultValue": {
+            "color": "#0072f0"
+          }
+        },
+        {
+          "id": "colorEnd",
+          "label": "Color End",
+          "type": "AXIS_COLOR",
+          "defaultValue": {
+            "color": "#9fc5e8"
+          }
+        },
+        {
+          "id": "opacity",
+          "label": "Opacity",
+          "defaultValue": "1",
+          "type": "OPACITY"
+        }
+      ]
+    },
+    {
+      "id": "marginOptions",
+      "label": "Graph Margin Options",
+      "elements": [        
+        {
+          "id": "marginTop",
+          "label": "Top (px)",
+          "defaultValue": 15,
+          "type": "INTERVAL"
+        },        
+        {
+          "id": "marginBottom",
+          "label": "Bottom (px)",
+          "defaultValue": 15,
+          "type": "INTERVAL"
+        },        
+        {
+          "id": "marginLeft",
+          "label": "Left (px)",
+          "defaultValue": 100,
+          "type": "INTERVAL"
+        },        
+        {
+          "id": "marginRight",
+          "label": "Right (px)",
+          "defaultValue": 100,
+          "type": "INTERVAL"
+        }
+      ]
+    },
+    {
+      "id": "labelOption",
+      "label": "Label Options",
+      "elements": [
+        {
+          "id": "labelFontFamily",
+          "label": "Font Family",
+          "type": "FONT_FAMILY",
+          "defaultValue": "Roboto"
+        },
+        {
+          "id": "labelFontSize",
+          "label": "Font Size",
+          "defaultValue": 14,
+          "type": "FONT_SIZE"
+        },
+        {
+          "id": "labelFontColor",
+          "label": "Font Color",
+          "defaultValue": {
+            "color": "#434343"
+          },
+          "type": "FONT_COLOR"
+        },
+        {
+          "id": "textVerticalAlignLabel",
+          "label": "Vertical Align",
+          "type": "SELECT_SINGLE",
+          "defaultValue": "middle",
+          "options": [
+            {
+              "label": "Middle",
+              "value": "middle"
+            },
+            {
+              "label": "Top",
+              "value": "top"
+            },
+            {
+              "label": "Bottom",
+              "value": "bottom"
+            }
+          ]
+        },
+        {
+          "id": "textHorizontalAlignLabel",
+          "label": "Horizontal Align",
+          "type": "SELECT_SINGLE",
+          "defaultValue": "end",
+          "options": [
+            {
+              "label": "Center",
+              "value": "middle"
+            },
+            {
+              "label": "Left",
+              "value": "end"
+            },
+            {
+              "label": "Right",
+              "value": "start"
+            }
+          ]
+        },
+        {
+          "id": "positionLabel",
+          "label": "Position",
+          "type": "SELECT_SINGLE",
+          "defaultValue": "out",
+          "options": [
+            {
+              "label": "Inside",
+              "value": "in"
+            },
+            {
+              "label": "Outside",
+              "value": "out"
+            }
+          ]
+        },
+        {
+          "id": "showLabel",
+          "label": "Show",
+          "defaultValue": true,
+          "type": "CHECKBOX"
+        }
+      ]
+    },
+    {
+      "id": "valueOption",
+      "label": "Value Options",
+      "elements": [
+        {
+          "id": "valueFontFamily",
+          "label": "Font Family",
+          "type": "FONT_FAMILY",
+          "defaultValue": "Roboto"
+        },
+        {
+          "id": "valueFontSize",
+          "label": "Font Size",
+          "defaultValue": 14,
+          "type": "FONT_SIZE"
+        },
+        {
+          "id": "valueFontColor",
+          "label": "Font Color",
+          "defaultValue": {
+            "color": "#000000"
+          },
+          "type": "FONT_COLOR"
+        },
+        {
+          "id": "textVerticalAlignValue",
+          "label": "Vertical Align",
+          "type": "SELECT_SINGLE",
+          "defaultValue": "middle",
+          "options": [
+            {
+              "label": "Middle",
+              "value": "middle"
+            },
+            {
+              "label": "Top",
+              "value": "top"
+            },
+            {
+              "label": "Bottom",
+              "value": "bottom"
+            }
+          ]
+        },
+        {
+          "id": "textHorizontalAlignValue",
+          "label": "Horizontal Align",
+          "type": "SELECT_SINGLE",
+          "defaultValue": "middle",
+          "options": [
+            {
+              "label": "Center",
+              "value": "middle"
+            },
+            {
+              "label": "Left",
+              "value": "end"
+            },
+            {
+              "label": "Right",
+              "value": "start"
+            }
+          ]
+        },
+        {
+          "id": "positionValue",
+          "label": "Position",
+          "type": "SELECT_SINGLE",
+          "defaultValue": "in",
+          "options": [
+            {
+              "label": "Inside",
+              "value": "in"
+            },
+            {
+              "label": "Outside",
+              "value": "out"
+            }
+          ]
+        },
+        {
+          "id": "showValue",
+          "label": "Show",
+          "defaultValue": true,
+          "type": "CHECKBOX"
+        }
+      ]
+    },
+    {
+      "id": "conversionOption",
+      "label": "Conversion Options",
+      "elements": [
+        {
+          "id": "conversionFontFamily",
+          "label": "Font Family",
+          "type": "FONT_FAMILY",
+          "defaultValue": "Arial"
+        },
+        {
+          "id": "conversionFontSize",
+          "label": "Font Size",
+          "defaultValue": 14,
+          "type": "FONT_SIZE"
+        },
+        {
+          "id": "conversionFontColor",
+          "label": "Font Color",
+          "defaultValue": {
+            "color": "#000"
+          },
+          "type": "FONT_COLOR"
+        },
+        {
+          "id": "textHorizontalAlignConversion",
+          "label": "Horizontal Align",
+          "type": "SELECT_SINGLE",
+          "defaultValue": "start",
+          "options": [
+            {
+              "label": "Center",
+              "value": "middle"
+            },
+            {
+              "label": "Left",
+              "value": "end"
+            },
+            {
+              "label": "Right",
+              "value": "start"
+            }
+          ]
+        },
+        {
+          "id": "showConversion",
+          "label": "Show",
+          "defaultValue": true,
+          "type": "CHECKBOX"
+        }
+      ]
+    }
+  ]
+}
